@@ -1,0 +1,30 @@
+{
+  "name": "landing",
+  "version": "1.0.0",
+  "description": "bowish app",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.6.10",
+    "angular-scroll": "^1.0.2",
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/bowish/landing.git"
+  },
+  "keywords": [
+    "bowish"
+  ],
+  "author": "ronel jimenez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/bowish/landing/issues"
+  },
+  "homepage": "https://gitlab.com/bowish/landing#README"
+}

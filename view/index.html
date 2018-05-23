@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <meta charset="UTF-8" />
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <title>Bowish</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/extras.css">
+</head>
+<body>
+  <div class="wrap" ng-controller="MyCtrl">
+    <nav>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12">
+              <div class="float-left">
+                  <div class="logo-container">
+                    <img src="../img/bowish_logo.png" alt="">
+                  </div>
+                </div>
+                <ul class="float-right">
+                  <li><a href="#section-1" du-smooth-scroll du-scrollspy>Section 1</a></li>
+                  <li><a href="#section-2" du-smooth-scroll du-scrollspy>Section 2</a></li>
+                  <li><a href="#section-3" du-smooth-scroll du-scrollspy>Section 3</a></li>
+                </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="section-container container-fluid">
+      <section id="section-1">
+        <div class="row align-items-center">
+          <div class="col-sm-6">
+            <h4 class="section-subtitle">CONOCE A BOWISH:</h4>
+            <h2 class="section-title">TU NUEVO AMIGO <br> DE OTRO PLANETA</h2>
+            <p class="section-description">Bacon ipsum dolor sit amet sausage tail capicola ground round hamburger ham hock. Short ribs pig andouille meatball, pastrami tri-tip fatback ham hock shank kielbasa swine.</p>
+          </div>
+          <div class="col-sm-6">
+            <div class="section-img-container">
+              <img src="../img/bowish_spaceship.png" alt="bowish_spaceship">
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <section name="section-2">
+        <h2>Section 2</h2>
+        <p>Bacon strip steak ground round, tongue pastrami short ribs pork chop venison turducken sausage sirloin. Flank chicken pork chop capicola turkey turducken cow pork loin biltong meatball drumstick pancetta filet mignon ground round fatback. Ham hock jerky short ribs brisket. Meatloaf shoulder pork chop capicola, sirloin swine pig pork. Jerky ribeye hamburger pork loin sirloin kevin bresaola boudin chuck flank. Ham hock pork belly chicken jerky rump bresaola.</p>
+      </section>
+    
+      <section name="section-3" id="section-3">
+        <h2>Section 3</h2>
+        <p>Shank fatback pastrami short loin, turkey jowl kielbasa ribeye chicken jerky drumstick flank ham. Swine shankle pork belly kielbasa shoulder flank jowl, sirloin doner. Kevin tri-tip bresaola leberkas. Swine ball tip cow strip steak. Ham filet mignon pork chop, pork fatback andouille pork loin shoulder jowl swine strip steak turducken prosciutto rump.</p>
+    
+        <p>Tongue tri-tip pastrami, shoulder rump pork belly ground round. Ham hock chuck leberkas doner, strip steak corned beef tri-tip capicola. Rump turkey ham sausage shankle. Flank shankle pork chop ham hock. Shankle venison kielbasa, pancetta swine beef ball tip t-bone bacon hamburger ground round ribeye flank. Turducken bacon bresaola, chicken kevin boudin ball tip strip steak filet mignon pork turkey shank ground round. Kielbasa fatback prosciutto pork chop, jerky ground round leberkas boudin ball tip beef shankle shoulder swine brisket.</p>
+      </section>
+    
+      <section id="section-4">
+        <h2>Section 4</h2>
+    
+        <p>Shoulder cow tenderloin chuck, pork chop jerky doner leberkas. Chuck sausage hamburger, kevin beef pork chop pork shoulder ground round ball tip turducken flank. Bresaola tri-tip meatloaf, salami venison tail pig shank shankle jowl sausage brisket cow biltong turducken. Swine turducken hamburger ball tip short loin prosciutto kevin jowl tri-tip. Doner meatloaf pork brisket.</p>
+      </section>
+    </div>
+    <footer>
+      <button ng-click="toTheTop()">Take me back!</button> or <button ng-click="toSection3()">To section 3</button>
+    </footer>
+  </div>
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../node_modules/popper.js/dist/popper.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+<script src="../node_modules/angular-scroll/angular-scroll.js"></script>
+<script src="../angularController/globalController.js"></script>
+
+</body>
+</html>

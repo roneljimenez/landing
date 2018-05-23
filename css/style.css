@@ -1,0 +1,102 @@
+  @font-face {
+    font-family: 'CorpusSans';
+    src: url('../fonts/CorpusSans.otf') format("opentype");
+  }
+  @font-face {
+    font-family: 'RadikalLight';
+    src: url('../fonts/Nootype\ -\ Radikal\ Light.otf') format("opentype");
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/bowish_stars.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  body, button {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  .container-fluid {
+    padding: 0 30px;
+  }
+  img {
+    max-width: 100%;
+  }
+  nav {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    background: transparent;
+  }
+  nav li, nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center
+  }
+  nav li, nav a {
+    display: inline-block;
+  }
+  nav a {
+    padding: 20px;
+    color: #333;
+    text-decoration: none;
+  }
+  .logo-container {
+    width: 178px;
+  }
+  a:hover {
+    background: #fff;
+  }
+  a.active {
+    background: #00AC7F;
+    color: #fff;
+  }
+  .wrap {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .section-container {
+    padding-top: 64px;
+  }
+
+  footer {
+    text-align: center;
+  }
+  button {
+    font-size: 18px;
+    border: 0;
+    padding: 15px 30px;
+    background: #00AC7F;
+    color: #fff;
+    cursor: pointer;
+  }
+  .section-subtitle {
+    font-size: 30px;
+    font-family: 'CorpusSans';
+    color: #49beb4;
+    line-height: 1;
+  }
+  .section-title {
+    font-size: 60px;
+    font-family: 'CorpusSans';
+    color: #fff;
+    line-height: 1.2;
+    margin-top: 12px;
+  }
+  .section-description {
+    font-size: 17px;
+    font-family: 'RadikalLight';
+    color: #fff;
+  }
+  .section-img-container {
+    width: 100%;
+    max-width: 586px;
+  }
