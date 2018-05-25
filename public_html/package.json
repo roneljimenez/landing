@@ -9,8 +9,10 @@
     "animate.css": "^3.6.1",
     "bootstrap": "^4.1.1",
     "jquery": "^3.3.1",
+    "lethargy": "^1.0.4",
     "modernizr": "^3.6.0",
-    "popper.js": "^1.14.3"
+    "popper.js": "^1.14.3",
+    "smartscroll": "^2.5.2"
   },
   "devDependencies": {},
   "scripts": {

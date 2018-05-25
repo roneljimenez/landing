@@ -47,3 +47,16 @@ jQuery(document).ready(function($){
         $('#right-nav').addClass('fadeOutRight');
         $('#right-nav').removeClass('fadeInRight');
     });
+
+    $(function() {
+        var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+        if(width>1200) {
+            //onePage Scroll
+            var smartscroll = $.smartscroll({
+                mode: 'set',
+                autoHash: false,
+                sectionWrapperSelector: ".section-container",
+                sectionClass: "section"
+            });
+        }
+    });

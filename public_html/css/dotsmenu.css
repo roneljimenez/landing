@@ -16,7 +16,7 @@
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
-    z-index: 1;
+    z-index: 2;
   }
   .no-touch #cd-vertical-nav li {
     text-align: right;
@@ -218,4 +218,14 @@
       bottom: 40px;
     }
   }
-  
+  .cd-scroll-down {
+    position: absolute;
+    left: 50%;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 30px;
+  }

@@ -28,10 +28,11 @@
     background-color: transparent;
     color: #fff;
     border: 1px solid #fff;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     border-radius: 5px;
     width: 100%;
     min-height: 35px;
+    padding-left: 10px;
   }
   .container-fluid {
     padding: 0 30px;
@@ -41,7 +42,6 @@
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 64px;
   }
   img {
     max-width: 100%;
@@ -55,7 +55,8 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 64px;
+    height: 90px;
+    padding: 20px 0;
     background: transparent;
   }
   #top-nav li, #top-nav ul {
@@ -77,6 +78,7 @@
   }
   section {
     min-height: 100vh;
+    position: relative;
   }
   .wrap {
     position: relative;
@@ -89,6 +91,10 @@
     color: #6d6d6d;
     font-family: 'RadikalLight';
     font-size: 14px;
+    padding: 45px 0 25px;
+  }
+  .footer-img-container {
+    margin-bottom: 25px;
   }
   button {
     font-size: 18px;
@@ -97,6 +103,27 @@
     background: #00AC7F;
     color: #fff;
     cursor: pointer;
+  }
+  #section-1 {
+    padding-top: 90px;
+  }
+  #section-2 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  #section-3 {
+    padding-top: 70px;
+    padding-bottom: 45px;
+  }
+  #section-4 {
+    padding-top: 120px;
+  }
+  #section-5 {
+    padding-top: 60px;
+  }
+  .special-img {
+    position: absolute;
+    z-index: 1;
   }
   .section-subtitle {
     font-size: 30px;
@@ -187,11 +214,14 @@
     border-color: #058e85;
     min-height: 40px;
   }
+  .submit-button:hover {
+    background-color: #038077;
+  }
 
   .footer-title {
     font-family: 'RadikalBold';
     font-size: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   .footer-list {
     list-style-type: none;
