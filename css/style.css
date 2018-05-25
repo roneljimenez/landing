@@ -6,25 +6,50 @@
     font-family: 'RadikalLight';
     src: url('../fonts/Nootype\ -\ Radikal\ Light.otf') format("opentype");
   }
+  @font-face {
+    font-family: 'RadikalBold';
+    src: url('../fonts/Nootype\ -\ Radikal\ Bold.otf') format("opentype");
+  }
   
   body {
     margin: 0;
     padding: 0;
-    background-image: url('../img/bowish_stars.jpg');
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   body, button {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
+  label {
+    display: block;
+    color: #fff;
+    font-family: 'RadikalLight';
+    font-size: 17px;
+  }
+  input, textarea {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    width: 100%;
+    min-height: 35px;
+  }
   .container-fluid {
     padding: 0 30px;
+  }
+  .backgroundBowish {
+    background-image: url('../img/bowish_stars.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 64px;
   }
   img {
     max-width: 100%;
   }
-  nav {
+  nav>ul {
+    list-style-type: none;
+  }
+  #top-nav {
     position: fixed;
     z-index: 1;
     top: 0;
@@ -33,16 +58,16 @@
     height: 64px;
     background: transparent;
   }
-  nav li, nav ul {
+  #top-nav li, #top-nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     text-align: center
   }
-  nav li, nav a {
+  #top-nav li, #top-nav a {
     display: inline-block;
   }
-  nav a {
+  #top-nav a {
     padding: 20px;
     color: #333;
     text-decoration: none;
@@ -50,12 +75,8 @@
   .logo-container {
     width: 178px;
   }
-  a:hover {
-    background: #fff;
-  }
-  a.active {
-    background: #00AC7F;
-    color: #fff;
+  section {
+    min-height: 100vh;
   }
   .wrap {
     position: relative;
@@ -63,12 +84,11 @@
     margin: 0 auto;
     padding: 0;
   }
-  .section-container {
-    padding-top: 64px;
-  }
 
   footer {
-    text-align: center;
+    color: #6d6d6d;
+    font-family: 'RadikalLight';
+    font-size: 14px;
   }
   button {
     font-size: 18px;
@@ -91,6 +111,9 @@
     line-height: 1.2;
     margin-top: 12px;
   }
+  .section-title>span {
+    color: #49beb4;
+  }
   .section-description {
     font-size: 17px;
     font-family: 'RadikalLight';
@@ -99,4 +122,102 @@
   .section-img-container {
     width: 100%;
     max-width: 586px;
+  }
+  #section-3 {
+    background-color: #c15bfc;
+  }
+  .content-container {
+    color: #fff;
+  }
+  .content-title {
+    font-family: 'RadikalBold';
+    font-size: 17px;
+    display: table;
+    margin: 20px 0;
+  }
+  .content-title .content-number {
+    display: table-cell;
+    width: 42px;
+    border: 3px solid #fff;
+    border-radius: 40px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .content-title .content-number div {
+    position: relative;
+    top: 2px;
+  }
+  .content-title .text {
+    padding-left: 16px;
+    margin: 0;
+    line-height: 1.2;
+  }
+  .content-description {
+    font-family: 'RadikalLight';
+    font-size: 15px;
+    width: 80%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    max-height: 90px;
+    overflow: hidden;
+  }
+  #section-4 {
+    background-color: #ffb140;
+  }
+  .download-description {
+    font-family: 'RadikalLight';
+    font-size: 17px;
+    color: #fff;
+    max-height: 170px;
+    overflow: hidden;
+    height: 100vh;
+  }
+  #section-5 {
+    background-color: #a1a1a1;
+  }
+  .submit-button {
+    color: #fff;
+    background-color: #058e85;
+    font-family: 'RadikalBold';
+    font-size: 17px;
+    border-color: #058e85;
+    min-height: 40px;
+  }
+
+  .footer-title {
+    font-family: 'RadikalBold';
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  .footer-list {
+    list-style-type: none;
+    text-align: left;
+  }
+  .footer-list>li::before{
+    content: "-";
+  }
+  .footer-list>li>a {
+    color: #6d6d6d;
+    font-size: 17px;
+  }
+  .footer-list>li>a:hover, .footer-list>li>a:focus, .footer-list>li>a:active {
+    opacity: .8;
+    text-decoration: none;
+  }
+  .vertical-line {
+    border-right: 1px solid #6d6d6d;
+  }
+  .rrss-list>li {
+    margin-bottom: 10px;
+  }
+  .rrss-list>li::before {
+    content:"";
+  }
+  .rrss-list .fa {
+    font-size: 18px;
+    margin-right: 8px;
   }

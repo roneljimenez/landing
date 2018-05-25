@@ -6,64 +6,253 @@
   <title>Bowish</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../icons/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/extras.css">
+  <link rel="stylesheet" href="../css/dotsmenu.css">
+  <link rel="stylesheet" href="../css/navmenu.css">
+  <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css">
+  <script src="../js/modernizr.js"></script>
 </head>
 <body>
   <div class="wrap" ng-controller="MyCtrl">
-    <nav>
+    <nav id="top-nav">
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-12">
               <div class="float-left">
                   <div class="logo-container">
-                    <img src="../img/bowish_logo.png" alt="">
+                    <img src="../img/bowish_logo.png" alt="bowish_logo">
                   </div>
+              </div>
+              <div class="float-right">
+                <div class="nav-menu" id="nav-menu">
+                <i class="fa fa-bars"></i>
                 </div>
-                <ul class="float-right">
-                  <li><a href="#section-1" du-smooth-scroll du-scrollspy>Section 1</a></li>
-                  <li><a href="#section-2" du-smooth-scroll du-scrollspy>Section 2</a></li>
-                  <li><a href="#section-3" du-smooth-scroll du-scrollspy>Section 3</a></li>
-                </ul>
+              </div>
           </div>
         </div>
       </div>
     </nav>
-    <div class="section-container container-fluid">
-      <section id="section-1">
-        <div class="row align-items-center">
-          <div class="col-sm-6">
-            <h4 class="section-subtitle">CONOCE A BOWISH:</h4>
-            <h2 class="section-title">TU NUEVO AMIGO <br> DE OTRO PLANETA</h2>
-            <p class="section-description">Bacon ipsum dolor sit amet sausage tail capicola ground round hamburger ham hock. Short ribs pig andouille meatball, pastrami tri-tip fatback ham hock shank kielbasa swine.</p>
+    <nav id="cd-vertical-nav">
+        <ul>
+          <li><a href="#section-1" du-smooth-scroll du-scrollspy><span class="cd-dot"></span>
+            <span class="cd-label">Qué es Bowish</span></a></li>
+          <li><a href="#section-2" du-smooth-scroll du-scrollspy><span class="cd-dot"></span>
+            <span class="cd-label">¿Cómo funciona?</span></a></li>
+          <li><a href="#section-3" du-smooth-scroll du-scrollspy><span class="cd-dot"></span>
+            <span class="cd-label">Simple y rápida</span></a></li>
+          <li><a href="#section-4" du-smooth-scroll du-scrollspy><span class="cd-dot"></span>
+            <span class="cd-label">Descargas</span></a></li>
+          <li><a href="#section-5" du-smooth-scroll du-scrollspy><span class="cd-dot"></span>
+            <span class="cd-label">Contacto</span></a></li>
+        </ul>
+      </nav>
+    <nav id="right-nav" style="right: -105%"  class="animated fadeOutRight">
+        <ul>
+          <li style="margin:28px 0 50px;cursor: pointer;" id="close-right-nav"><a><img src="../img/cerrar.png" alt="cerrar" width="25px"></li>
+          <li><a href="#section-1" du-smooth-scroll du-scrollspy>Qué es Bowish</a></li>
+          <li><a href="#section-2" du-smooth-scroll du-scrollspy>¿Cómo funciona?</a></li>
+          <li><a href="#section-3" du-smooth-scroll du-scrollspy>Simple y rápida</a></li>
+          <li><a href="#section-4" du-smooth-scroll du-scrollspy>Descargas</a></li>
+          <li><a href="#section-5" du-smooth-scroll du-scrollspy>Contacto</a></li>
+          <li><a href="#">Políticas Sustentables</a></li>
+          <li><a href="#">Términos y Condiciones</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </nav>
+    <div class="section-container">
+      <div class="backgroundBowish">
+          <section id="section-1" class="container-fluid">
+            <div class="row align-items-center">
+              <div class="col-sm-6">
+                <h4 class="section-subtitle">CONOCE A BOWISH:</h4>
+                <h2 class="section-title">TU NUEVO AMIGO <br> DE OTRO PLANETA</h2>
+                <p class="section-description">Bacon ipsum dolor sit amet sausage tail capicola ground round hamburger ham hock. Short ribs pig andouille meatball, pastrami tri-tip fatback ham hock shank kielbasa swine.</p>
+              </div>
+              <div class="col-sm-6">
+                <div class="section-img-container">
+                  <img src="../img/bowish_spaceship.png" alt="bowish_spaceship">
+                </div>
+              </div>
+            </div>
+          </section>
+        
+          <section name="section-2" class="container-fluid">
+            <div class="row align-items-center">
+              <div class="col-sm-6">
+                  <h2 class="section-title"><span>HOLA,</span> SOY BOWISH</h2>
+                  <p class="section-description">Bacon strip steak ground round, tongue pastrami short ribs pork chop venison turducken sausage sirloin. Flank chicken pork chop capicola turkey turducken cow pork loin biltong meatball drumstick pancetta filet mignon ground round fatback. Ham hock jerky short ribs brisket. Meatloaf shoulder pork chop capicola, sirloin swine pig pork. Jerky ribeye hamburger pork loin sirloin kevin bresaola boudin chuck flank. Ham hock pork belly chicken jerky rump bresaola.</p>
+              </div> 
+              <div class="col-sm-6">
+                  <div class="section-img-container">
+                    <img src="../img/bowish2a.png" alt="bowish2a">
+                  </div>
+                </div>  
+            </div>
+          </section>
+      </div>
+      <section name="section-3" id="section-3" class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12">
+            <h2 class="section-title">BOWISH: UNA APP SIMPLE Y RÁPIDA</h2>
           </div>
-          <div class="col-sm-6">
-            <div class="section-img-container">
-              <img src="../img/bowish_spaceship.png" alt="bowish_spaceship">
+          <div class="col-sm-6 col-md-3">
+            <img src="../img/iphone1.png" alt="iphone1">
+            <div class="content-container">
+              <h2 class="content-title"><span class="content-number"><div>1</div></span><div class="text">DESCARGA A BOWISH <br>E INICIA SESIÓN</div></h2>
+              <p class="content-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipis</p>
             </div>
           </div>
+          <div class="col-sm-6 col-md-3">
+              <img src="../img/iphone2.png" alt="iphone2">
+              <div class="content-container">
+                  <h2 class="content-title"><span class="content-number"><div>2</div></span><div class="text">NAVEGA Y ENCUENTRA <br>TU BENEFICIO</div></h2>
+                  <p class="content-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipis</p>
+                </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+              <img src="../img/iphone3.png" alt="iphone3">
+              <div class="content-container">
+                  <h2 class="content-title"><span class="content-number"><div>3</div></span><div class="text">ACTIVA EL CUPÓN <br>Y DISFRUTA</div></h2>
+                  <p class="content-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipis</p>
+                </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+              <img src="../img/iphone4.png" alt="iphone4">
+              <div class="content-container">
+                  <h2 class="content-title"><span class="content-number"><div>4</div></span><div class="text">ÚNETE A LA COMUNIDAD <br>Y CALIFICA TU EXPERIENCIA</div></h2>
+                  <p class="content-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipis</p>
+                </div>
+          </div>      
         </div>
       </section>
     
-      <section name="section-2">
-        <h2>Section 2</h2>
-        <p>Bacon strip steak ground round, tongue pastrami short ribs pork chop venison turducken sausage sirloin. Flank chicken pork chop capicola turkey turducken cow pork loin biltong meatball drumstick pancetta filet mignon ground round fatback. Ham hock jerky short ribs brisket. Meatloaf shoulder pork chop capicola, sirloin swine pig pork. Jerky ribeye hamburger pork loin sirloin kevin bresaola boudin chuck flank. Ham hock pork belly chicken jerky rump bresaola.</p>
+      <section id="section-4" name="section-4" class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6">
+              <div class="col-sm-12 p-0">
+                  <h2 class="section-title">DESCARGA Y DISFRUTA</h2>
+                  <p class="download-description">Shoulder cow tenderloin chuck, pork chop jerky doner leberkas. Chuck sausage hamburger, kevin beef pork chop pork shoulder ground round ball tip turducken flank. Bresaola tri-tip meatloaf, salami venison tail pig shank shankle jowl sausage brisket cow biltong turducken. Swine turducken hamburger ball tip short loin prosciutto kevin jowl tri-tip. Doner meatloaf pork brisket.</p>
+              </div>
+              <div class="row p-0">
+                <div class="col-sm-6 p-0">
+                  <a href="#"><img src="../img/gplay.png" alt="app_google_play"></a>
+                </div>
+                <div class="col-sm-6 p-0">
+                    <a href="#"><img src="../img/apps.png" alt="app_google_play"></a>
+                </div>
+              </div>
+          </div>
+          <div class="col-sm-6">
+              <div class="section-img-container">
+                  <img src="../img/bowish_mobile_app.png" alt="bowish_mobile_app">
+                </div>
+          </div>
+        </div>
       </section>
-    
-      <section name="section-3" id="section-3">
-        <h2>Section 3</h2>
-        <p>Shank fatback pastrami short loin, turkey jowl kielbasa ribeye chicken jerky drumstick flank ham. Swine shankle pork belly kielbasa shoulder flank jowl, sirloin doner. Kevin tri-tip bresaola leberkas. Swine ball tip cow strip steak. Ham filet mignon pork chop, pork fatback andouille pork loin shoulder jowl swine strip steak turducken prosciutto rump.</p>
-    
-        <p>Tongue tri-tip pastrami, shoulder rump pork belly ground round. Ham hock chuck leberkas doner, strip steak corned beef tri-tip capicola. Rump turkey ham sausage shankle. Flank shankle pork chop ham hock. Shankle venison kielbasa, pancetta swine beef ball tip t-bone bacon hamburger ground round ribeye flank. Turducken bacon bresaola, chicken kevin boudin ball tip strip steak filet mignon pork turkey shank ground round. Kielbasa fatback prosciutto pork chop, jerky ground round leberkas boudin ball tip beef shankle shoulder swine brisket.</p>
-      </section>
-    
-      <section id="section-4">
-        <h2>Section 4</h2>
-    
-        <p>Shoulder cow tenderloin chuck, pork chop jerky doner leberkas. Chuck sausage hamburger, kevin beef pork chop pork shoulder ground round ball tip turducken flank. Bresaola tri-tip meatloaf, salami venison tail pig shank shankle jowl sausage brisket cow biltong turducken. Swine turducken hamburger ball tip short loin prosciutto kevin jowl tri-tip. Doner meatloaf pork brisket.</p>
-      </section>
+
+      <section id="section-5" name="section-5" class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-sm-7">
+                <div class="col-sm-11 p-0">
+                    <h2 class="section-title">ESTAMOS EN CONTACTO</h2>
+                    <p class="section-description">Shoulder cow tenderloin chuck, pork chop jerky doner leberkas. Chuck sausage hamburger, kevin beef pork chop pork shoulder.</p>
+                </div>
+                <div class="row p-0">
+                  <div class="col-sm-12">
+                    <form action="#" method="POST">
+                      <div class="row">
+                          <div class="col-sm-5">
+                              <label for="nombre">Nombre</label>
+                              <input type="text" name="nombre" required>
+                            </div>
+                            <div class="col-sm-5">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" required>
+                            </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-sm-5">
+                              <label for="telefono">Teléfono(Opcional)</label>
+                              <input type="text" name="telefono">
+                          </div>
+                          <div class="col-sm-5">
+                              <label for="asunto">Asunto</label>
+                              <input type="text" name="asunto">
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-sm-10">
+                              <label for="comentario">Comentario</label>
+                              </textarea><textarea name="comentario" id="" cols="30" rows="5"></textarea>
+                          </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <input type="submit" class="submit-button" value="ENVIAR">
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <div class="section-img-container">
+                    <img src="../img/bowish_contact.png" alt="bowish_mobile_app">
+                  </div>
+            </div>
+          </div>
+        </section>
     </div>
     <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="footer-img-container">
+              <img src="../img/bowish_footer_logo.png" alt="bowish_footer_logo">
+            </div>
+            <div>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas ratione dolorum quis aliquid, error, nulla veritatis ex rem veniam quia optio aut deserunt quae blanditiis quo eos, eveniet ab nobis.</p>
+            </div>
+            <div>
+              <h4>(R) BOWISH TEAM S.A</h4>
+            </div>
+          </div>
+          <div class="col-sm-3 vertical-line">
+              <h3 class="footer-title" style="padding-left: 40px;">MENÚ</h3>
+              <ul class="footer-list">
+                <li><a href="#section-1" du-smooth-scroll du-scrollspy>&nbsp;¿Qué es Bowish?</a></li>
+                <li><a href="#section-2" du-smooth-scroll du-scrollspy>&nbsp;¿Cómo funciona?</a></li>
+                <li><a href="#section-3" du-smooth-scroll du-scrollspy>&nbsp;Simple y Rápida</a></li>
+                <li><a href="#section-4" du-smooth-scroll du-scrollspy>&nbsp;Descargas</a></li>
+                <li><a href="#section-5" du-smooth-scroll du-scrollspy>&nbsp;Contacto</a></li>
+                <li><a href="#">&nbsp;Políticas Sustentables</a></li>
+                <li><a href="#">&nbsp;Términos y Condiciones</a></li>
+                <li><a href="#">&nbsp;FAQ</a></li>
+              </ul>
+          </div>
+          <div class="col-sm-3 vertical-line">
+              <h3 class="footer-title" style="padding-left: 40px;">NOSOTROS</h3>
+              <ul class="footer-list">
+                <li><a href="#">&nbsp;lorem ipsum</a></li>
+                <li><a href="#">&nbsp;lorem ipsum</a></li>
+                <li><a href="#">&nbsp;lorem ipsum</a></li>
+                <li><a href="#">&nbsp;lorem ipsum</a></li>
+                <li><a href="#">&nbsp;lorem ipsum</a></li>
+              </ul>
+          </div>
+          <div class="col-sm-3">
+              <h3 class="footer-title" style="padding-left: 40px;">REDES SOCIALES</h3>
+              <ul class="footer-list rrss-list">
+                <li><a href="https://web.facebook.com/bowishCL/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> /BowishCL</a></li>
+                <li><a href="https://www.instagram.com/bowishcl/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> @BowishCL</a></li>
+                <li><a href="#" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i> /BowishCL</a></li>
+                <li><a href="https://twitter.com/bowish2" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>@BowishCL</a></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+
       <button ng-click="toTheTop()">Take me back!</button> or <button ng-click="toSection3()">To section 3</button>
     </footer>
   </div>
@@ -72,6 +261,7 @@
 <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
 <script src="../node_modules/angular-scroll/angular-scroll.js"></script>
+<script src="../js/main.js"></script>
 <script src="../angularController/globalController.js"></script>
 
 </body>

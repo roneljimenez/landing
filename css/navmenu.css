@@ -1,0 +1,43 @@
+.nav-menu {
+    width: 35px;
+    position: absolute;
+    cursor: pointer;
+    top: 20%;
+    right: 1%;
+    color: #fff;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+.fa-bars {
+    font-size: 30px;
+}
+#right-nav {
+    position: fixed;
+    width: 30%;
+    height: 100%;
+    top: 0;
+    margin: 0;
+    background-color: #ffff;
+    opacity: 0.8;
+    border-radius: 0;
+    z-index: 2;
+    text-align: right;
+    padding-right: 25px;
+}
+#right-nav>li {
+    margin-bottom: 5rem;
+}
+#right-nav ul>li>a {
+    color: #acacac;
+    font-family: 'CorpusSans';
+    font-size: 25px;
+}
+#right-nav ul>li>a:hover {
+    opacity: .7;
+    text-decoration: none;
+}
+#right-nav ul>li>a:focus, #right-nav>li>a:active {
+    color: 058e85;
+}
