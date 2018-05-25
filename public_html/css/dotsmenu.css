@@ -229,3 +229,8 @@
     transform: translateX(-50%);
     bottom: 30px;
   }
+  @media only screen and (max-width: 320px) {
+    .cd-scroll-down {
+      bottom: 5px;
+    }
+  }

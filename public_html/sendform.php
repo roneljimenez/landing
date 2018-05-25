@@ -13,7 +13,7 @@ $asunto=$_POST['asunto'];
 $comentario=$_POST['comentario'];
 
 
-$recibecorreo="rjespinoza1190@gmail.com";
+$recibecorreo="hola@bowish.com";
 $cuerpo= "Consulta Enviada \n";
 $cuerpo .="Nombre: ".$nombre."\n";
 $cuerpo .="email: ".$email."\n";
