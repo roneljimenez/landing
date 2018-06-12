@@ -266,6 +266,15 @@
   #section-1 {
     padding-top: 185px;
   }
+  .special-img {
+    width: 80%;
+    right: -15px;
+    top: 90px;
+  }
+  .contact-form-img {
+    width: 85%;
+    margin: 25px 0;
+  }
 }
 @media only screen and (max-width: 767px) {
   .section-subtitle {
