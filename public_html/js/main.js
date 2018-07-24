@@ -34,7 +34,12 @@ jQuery(document).ready(function($){
         	{'scrollTop':target.offset().top},
         	600
         );
-	}
+    }
+    
+    AOS.init({
+        duration: 1000,
+        easing: 'ease-out-back'
+    });
 });
 
     //Desplegable Menu 
@@ -44,6 +49,11 @@ jQuery(document).ready(function($){
     });
     //Close Desplegable Menu 
     $('#close-right-nav').click(function(){
+        $('#right-nav').addClass('fadeOutRight');
+        $('#right-nav').removeClass('fadeInRight');
+    });
+    //Close Desplegable Menu on scroll
+    $(window).on('scroll', function(){
         $('#right-nav').addClass('fadeOutRight');
         $('#right-nav').removeClass('fadeInRight');
     });

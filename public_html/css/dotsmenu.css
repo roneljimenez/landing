@@ -48,6 +48,9 @@
     -o-transform: scale(1);
     transform: scale(1);
   }
+  .no-touch #cd-vertical-nav a:hover .cd-dot {
+    background-color: #fff;
+  }
   .no-touch #cd-vertical-nav a:hover .cd-label {
     opacity: 1;
   }
