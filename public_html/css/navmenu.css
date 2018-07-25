@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'CorpusSans';
+    src: url('../fonts/CorpusSans.otf') format("opentype");
+  }
 .nav-menu {
     width: 35px;
     position: absolute;
@@ -29,19 +33,20 @@
     opacity: 0.8;
     border-radius: 0;
     z-index: 2;
+    text-transform: uppercase;
     text-align: right;
     padding-right: 25px;
 }
-#right-nav>li {
-    margin-bottom: 5rem;
+#right-nav li {
+    margin-bottom: 2rem;
 }
 #right-nav ul>li>a {
     color: #acacac;
     font-family: 'CorpusSans';
-    font-size: 23px;
+    font-size: 21px;
 }
-#right-nav ul>li>a:hover {
-    opacity: .7;
+#right-nav ul>li>a:hover, #right-nav ul>li>a:focus, #right-nav ul>li>a:active {
+    color: #49beb4;
     text-decoration: none;
 }
 #right-nav ul>li>a:focus, #right-nav>li>a:active {

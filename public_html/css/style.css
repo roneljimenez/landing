@@ -78,6 +78,8 @@
   }
   section {
     min-height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
     position: relative;
   }
   .wrap {
@@ -89,13 +91,22 @@
   }
 
   footer {
+    background-color: #f2f2f2;
     color: #6d6d6d;
     font-family: 'RadikalLight';
-    font-size: 12px;
-    padding: 45px 0 25px;
+    font-size: 14px;
+    padding: 85px 0 25px;
   }
   .footer-img-container {
-    margin-bottom: 25px;
+    width: 285px;
+    height: 70px;
+    margin-bottom: 49px;
+  }
+  .footer-img-container img {
+    height: 100%;
+  }
+  .copyright {
+    margin-top: 40px; 
   }
   button {
     font-size: 18px;
@@ -202,9 +213,10 @@
     font-family: 'RadikalLight';
     font-size: 17px;
     color: #fff;
+    height: 170px;
     max-height: 170px;
+    margin: 40px 0;
     overflow: hidden;
-    height: 100vh;
   }
   #section-5 {
     background-color: #a1a1a1;
@@ -213,7 +225,8 @@
     color: #fff;
     background-color: #058e85;
     font-family: 'RadikalBold';
-    font-size: 17px;
+    font-size: 16px;
+    padding-top: 5px;
     border-color: #058e85;
     min-height: 40px;
   }
@@ -224,7 +237,9 @@
   .footer-title {
     font-family: 'RadikalBold';
     font-size: 17px;
-    margin-bottom: 30px;
+    letter-spacing: 1px;
+    padding-top: 25px;
+    margin-bottom: 25px;
   }
   .footer-list {
     list-style-type: none;
@@ -232,6 +247,9 @@
   }
   .footer-list>li::before{
     content: "-";
+  }
+  .footer-list>li {
+    margin-bottom: 10px;
   }
   .footer-list>li>a {
     color: #6d6d6d;
@@ -251,16 +269,17 @@
     content:"";
   }
   .rrss-list .fa {
-    font-size: 22px;
+    font-size: 28px;
     margin-right: 8px;
   }
-  .rss-list .img-instagram {
-    width: 21px;
+ .img-instagram {
+    width: 27px;
     margin-right: 7px;
   }
 @media only screen and (min-width: 1024px) and (max-width: 1240px) {
     section {
       min-height: 50vh;
+      max-height: 50vh;
     }
     #section-1 {
       padding-top: 115px;
