@@ -40,6 +40,20 @@ jQuery(document).ready(function($){
         duration: 1000,
         easing: 'ease-out-back'
     });
+
+    var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+    if(width<1300) {
+        $(window).scroll(function(){
+            var height = $(window).scrollTop();
+            if(height > 20) {
+                $( "#top-nav" ).addClass('nav-color');
+            }
+            else {
+                $( "#top-nav" ).removeClass('nav-color');
+            }
+        });
+    }
+
 });
 
     //Desplegable Menu 
