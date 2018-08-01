@@ -1,0 +1,43 @@
+.mainHeader {
+	height: 2em;
+	background-color: black;
+}
+#section-1 {
+    background-color: #513e38;
+    padding-top: 115px;
+}
+#section-2 {
+    background-color: #3d8c85;
+    padding-top: 115px;
+}
+#section-3 {
+    background-color: #643939;
+    padding-top: 115px;
+}
+.section-subtitle {
+    color: #fff;
+}
+.section-title {
+	color: #49beb4;
+}
+.white {
+    color: #fff;
+}
+#section-1 ul {
+    list-style-image: url('../img/partners/ok_bullet.png');
+	font-size: 18px;
+    font-family: 'RadikalLight';
+    color: #fff;
+    letter-spacing: 0.1em;
+}
+.bowishBtn {
+	background-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #49beb4;
+    border-radius: 7px;
+    color: #49beb4;
+    letter-spacing: 0.2em;
+    font-size: 13px;
+    padding: 5px 22px;
+}
