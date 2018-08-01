@@ -342,10 +342,15 @@
   .fa-bars {
     font-size: 35px;
   }
-  footer .vertical-line:nth-of-type(2) {
+  /* footer .vertical-line:nth-of-type(2) {
     border: transparent;
+  } */
+  .footer-img-container {
+    width: 208px;
+    height: 60px;
   }
 }
+
 @media only screen and (max-width: 767px) {
   section {
     max-height: unset;
@@ -408,7 +413,7 @@
     font-size: 15px;
   }
   .store-img {
-    max-width: 60%;
+    max-width: 95%;
   }
   .special-img {
     position: relative;
