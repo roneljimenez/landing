@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="faqsApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Terminos y Condiciones</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../icons/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css?v=1.5.1">
+    <link rel="stylesheet" href="../css/stylefaqs.css?v=1.0">
+    <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
+    <script src="../js/modernizr.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+    <script src="../node_modules/angular-scroll/angular-scroll.js"></script>
+    <script src="../node_modules/lethargy/lethargy.min.js"></script>
+    <script src="https://rawgit.com/Olical/EventEmitter/master/EventEmitter.min.js"></script>
+    <script src="../node_modules/smartscroll/smartscroll.min.js"></script>
+    <script src="../node_modules/aos/dist/aos.js"></script>
+    <script src="../angularController/faqsController.js"></script>
+</head>
+
+<body ng-controller="showTerminosController">
+  <div class="wrap">
+    <div class="container-fluid">
+        <div class="header-img-container">
+          <img src="../img/faqs/headerfaqs.png" alt="">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="" ng-click="showPreguntas()">PREGUNTAS FRECUENTES USUARIO</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="" ng-click="showTerminos()">TÉRMINOS Y CONDICIONES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"href="#section-5" du-smooth-scroll du-scrollspy>CONTACTO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">VOLVER</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+    <div class="container-fluid"> 
+      <div ng-show="terminos">
+          <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Bowish
+                  </button>
+                </h5>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    Aplicación móvil a través de la cual los teléfonos móviles y smartphones, tablets y cualquier otro aparato electrónico por el cual se pueda acceder a los
+                    Servicios de plataforma de descuentos/beneficios, marketing y publicidad, que brinda Bowish Ltda.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Comercio(s)
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    <p>Significa toda empresa que ofrezca Productos a los Usuarios mediante promociones a través de Bowish, según disponibilidad, stock y bajo su propia responsabilidad. </p>
+
+                    <p>Los presentes Términos y Condiciones de Uso, y sus actualizaciones (“BOWISH”) constituyen entre Usted (“Usuario”) y Bowish, domiciliada en Monjitas 550, of. 19, Santiago de Chile un acuerdo. Regulan el acceso o uso que toda persona haga a título de Usuario desde cualquier parte de Chile a la aplicación, contenido, productos y servicios puestos a disposición por Bowish constituyendo de esta forma un acuerdo, completo y perfecto, entre estas partes, las que deberán en todo momento regirse por sus disposiciones. </p>
+                    
+                    <p>Por medio de la aprobación de los presentes Términos y Condiciones, se entiende que el Usuario los ha leído y aceptado, en todas sus partes, y entiende que estos le son legalmente vinculantes y obligatorios. Por tanto, acepta las condiciones de utilización y aprovechamiento de la Aplicación Móvil y todo el contenido de las mismas. Así como a cualquier modificación, sustitución o adición que pudiesen sufrir éstas. Asimismo, el Usuario acepta todas las políticas anexas, condiciones adicionales a estos Términos y Condiciones, así como otras que Bowish mantenga vigentes en relación a la prestación de sus servicios. El Usuario se compromete, siendo su deber, a leer las disposiciones de los siguiente Términos y Condiciones.</p>
+                    
+                    <p>En caso contrario, el Usuario deberá abstenerse de acceder a la Aplicación Móvil y de los Servicios brindados a través de la misma, ya sea directa o indirectamente, y de utilizar cualquier información o servicio provisto por ésta.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      1. SERVICIO
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    <p>Bowish es una aplicación gratuita para teléfonos móviles que tiene por objeto entregar a través del dispositivo celular del Usuario información sobre beneficios, descuentos, establecimientos comerciales, lugares y/o actividades de interés para los Usuarios, que se encuentren disponibles y conforme a los gustos y preferencias de los Usuarios al momento de activar esta aplicación en su teléfono móvil (el “Servicio” y la “Aplicación”, respectivamente).
+                    El Servicio es válido y aplicable únicamente en el territorio de Chile. La información sobre beneficios y descuentos a la cual permite acceder esta Aplicación, podrá referirse a:</p>
+                    
+                    <p>A. aquellos ofrecidos por terceros (comercios) a través de sus propios programas de beneficios, tales como: empresas para disfrutar de bienes, productos, servicios.<br>
+                    B. aquellos pertenecientes al programa de beneficios desarrollado por Bowish ofrecidos por alguno de los comercios asociados a éste.<br>
+                    C. aquellos ofrecidos por terceros como parte de un programa de fidelidad.<br>
+                    D. aquellos ofrecidos por Bowish como parte de un programa de fidelidad de sus comercios asociados</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        2. INSCRIPCIÓN Y CREACIÓN DE CUENTA
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                  <div class="card-body">
+                      <p>El acceso a la Aplicación y a la totalidad de los Servicios de Bowish, requiere que el Usuario descargue la aplicación vía Apple store o Play store. La inscripción se llevará a cabo mediante el ingreso voluntario de ciertos datos privados o personales del usuario, de los cuales se entiende es titular el usuario. </p>
+
+                      <p>Podrá unir la inscripción de la cuenta Bowish a facebook o realizar el registro manual de la cuenta requerirá que el Usuario comunique a Bowish Datos
+                      Personales.</p>
+
+                      <p>Los datos personales deben ser verídicos, exactos y precisos, siendo el deber del usuario que dicha información no contenga errores ni falsedades.</p>
+
+                      <p>Es obligación del Usuario mantener sus Datos Personales actualizados permanentemente y particularmente cada vez que se acceda al Servicio o Aplicación. De esta manera, cualquier error, falla o daño que tengan causa en información errónea, falsa o incompleta no será responsabilidad de Bowish, sino de la parte que proporcionó la información o no la actualizó debidamente. Si el Usuario no mantiene la información de su Cuenta de forma exacta, completa y actualizada podrá resultar en su imposibilidad para acceder y utilizar la Aplicación y acceder al Servicio, e incluso la terminación por parte de Bowish del presente Acuerdo: Una vez ingresado los Datos Personales de forma manual o accediendo a través de Facebook y aceptados los Términos y Condiciones de manera inequívoca se entenderá terminado el proceso de registro que habilita hacer uso del Servicio.</p>
+
+                      <p>El uso de la cuenta es estrictamente personal, por lo que se prohíbe toda transacción, donación o enajenación a cualquier título de la Cuenta. Tampoco se podrá autorizar a terceros a acceder a la Cuenta y/o hacer uso de sus funciones. Las claves, contraseñas u otra información entregada por el Usuario debe ser custodiada por él en todo momento; su entrega a terceros, pérdida, uso prohibido o ilícito, o cualquier acto sobre ellas que contravenga el presente acuerdo o la ley vigente, no es responsabilidad de Bowish. En cualquiera de estas circunstancias, es obligación del Usuario notificar a Bowish así como a las autoridades competentes. Asimismo, en caso que el Usuario sospechará que alguien ha obtenido acceso a su clave o si ésta se ha perdido o ha sido robada deberá contactar inmediatamente al administrador de sistema de Bowish al siguiente email hola@bowish.com Para proceder a la inscripción y obtener la Cuenta, el Usuario deberá declarar en el formulario de inscripción que ha leído y acepta expresamente los presentes Términos y Condiciones. Lo anterior, es sin perjuicio de la posibilidad de permitir al Usuario, una vez creada la Cuenta, acceder a la plataforma mediante una aplicación de terceros, lo que se regirá conforme a los respectivos términos y condiciones de tales aplicaciones.</p>
+                  </div>
+                </div>
+              </div>
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        3. OBLIGACIONES DEL USUARIO
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                  <div class="card-body">
+                      <p>Son obligaciones del Usuario:<br>
+
+                          A. Hacer uso la Aplicación y del Servicio conforme a los presentes Términos y Condiciones.<br>
+                          
+                          B. Obtener el acceso a la red de datos necesario para utilizar la Aplicación y adquirir y actualizar el hardware compatible o los dispositivos necesarios para acceder y utilizar el Servicio y Aplicación y cualquier actualización de estos.<br>
+                          
+                          C. Mantener actualizado sus Datos Personales debiendo proceder inmediatamente a la corrección de los mismos si detectare errores u omisiones en sus Datos Personales<br>
+                          
+                          D. Respetar los términos de la licencia otorgada por Bowish.</p>
+                  </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingSix">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        4. RESPONSABILIDAD DE TÉRMINOS Y CONDICIONES
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                  <div class="card-body">
+                      <p>La Aplicación sólo pone a disposición de los Usuarios la información acerca de la disponibilidad de beneficios y/o descuentos entre Usuarios y los distintos comercios a programas de descuento en la provisión de un bien, producto o servicio. Estos comercios no tienen relación alguna con Bowish. Bowish no es el propietario ni encargado de proveer ninguno de los productos o servicios ofrecidos a través de los programas de descuento a cuya información da acceso la Aplicación ni tiene injerencia en la prestación de los mismos. Asimismo,</p>
+
+                      <p>Bowish no es el encargado, ni tiene injerencia alguna en la elaboración de los programas de descuentos y/o fidelización que pueden ofrecer estos comercios. Los descuentos y/o beneficios otorgados por los distintos comercios en bienes, productos o servicios en el marco de los programas de descuento cuya información es proporcionada por la Aplicación, son de exclusiva responsabilidad de quienes los otorgan.</p>
+
+                      <p>Bowish no asume ningún tipo de responsabilidad por la obtención y/o correcta aplicación del descuento y/o beneficio, ni por la calidad del producto o servicio prestado por el comercio asociado en la ejecución del beneficio y/o descuento respectivo.</p>
+
+                      <p>El Usuario reconoce y acepta que Bowish no vende los bienes o productos, ni presta los servicios ofrecidos como parte de los programas de descuento, y que el responsable de entregar el bien o producto o prestar el servicio, al cual el descuento o beneficio se refiere, es el comercio correspondiente.</p>
+
+                      <p>Bowish no será responsable por daños o perjuicios que pudiere sufrir cualquier Usuario, con motivo y/o ocasión de la entrega de los beneficios ofrecidos por los comercios asociados a programas de descuento cuya información se entrega a través de la Aplicación.</p>
+
+                      <p>Los descuentos y/o beneficios solo podrán ser exigidos por quienes cumplan con las condiciones establecidas por los respectivos comercios. La verificación de las condiciones comerciales y plazos para acceder a los beneficios y/o descuentos es de responsabilidad exclusiva de los Usuarios.</p>
+
+                      <p>Bowish no será responsable por la veracidad, exactitud y vigencia de la información entregada por los comercios que promocionan y otorgan beneficios y descuentos, ni por el incumplimiento en el otorgamiento de los descuentos o beneficios publicados por tales comercios.</p>
+                  </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingSeven">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        5. ACCESO, USO DE RED Y FALLAS EN EL SISTEMA
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                  <div class="card-body">
+                      <p>A. Acceso y uso de Red<br>
+
+                      El Usuario es responsable de obtener el acceso a la red de datos necesario para acceder a la Aplicación y hacer uso del Servicio. El Usuario será exclusivamente
+                      responsable de las tarifas y tasas de datos y mensajes de la red móvil a través de la cual accede a la Aplicación y hace uso del Servicios desde un dispositivo móvil. El
+                      Usuario es responsable de adquirir y actualizar el hardware compatible o los dispositivos necesarios para acceder a la Aplicación y utilizar el Servicio y cualquier
+                      actualización de estos.</p>
+
+                      <p>B. Fallas en el Sistema <br>
+
+                      El acceso a la Aplicación y el Servicio entregado por Bowish se lleva a cabo en plataformas virtuales y se encuentra condicionada a una serie de factores que no
+                      dependen de la misma, como el actuar de terceros, el funcionamiento de servidores, entre otras circunstancias que pueden influir directa o indirectamente en la
+                      disponibilidad del Servicio. Por ello, Bowish no puede garantizar ni tomar responsabilidad por casos en que el sistema se interrumpa, no se encuentre disponible o
+                      cualquier otra falla que impida un uso adecuado de la Aplicación, ni tampoco responder por daños o perjuicios derivados de estas situaciones. Bowish no es responsable
+                      por ningún tipo de pérdida, daño, robo, inutilización o cualquier otra acción o hecho derivado del uso, examen, acceso o cualquier otra forma de interacción con el
+                      servicio salvo que lo anterior sea atribuible a su culpa. Cualquier tipo de virus informático o programa malicioso que afectare un dispositivo por uso del servicio se debe
+                      a factores ajenos e inimputables a Bowish, por lo que no recae sobre ella la responsabilidad que supusiere el daño o perjuicio que éstos causaren. No podrá imputársele
+                      responsabilidad alguna ni exigir pago de indemnización alguna, en virtud de perjuicios resultantes de dificultades técnicas o fallas en los sistemas de internet, en la
+                      medida que no sea atribuible a la culpa de Bowish. Por último, Bowish no garantiza que el Servicio, o cualquier parte de este, funcionen en cualquier hardware o
+                      dispositivo particular. Además, el Usuario acepta que el Servicio podrá ser objeto de disfunciones o retrasos inherentes al uso de Internet y de las comunicaciones
+                      electrónicas.</p>
+                  </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingEight">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        6. PROHIBICIONES
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+                  <div class="card-body">
+                      <p>Sin perjuicio de otras prohibiciones contenidas en estos Términos y Condiciones, se prohíben las siguientes conductas a los Usuarios:<br>
+
+                          A. Recopilar Datos Personales o cualquier otra información de los Usuarios, cualquiera sea la forma en que hayan sido recopilados, sin contar con la autorización expresa previa y debida del titular de los mismos.<br>
+                          
+                          B. Recopilar Datos Personales o cualquier otra información de los Usuarios, cualquiera sea la forma en que hayan sido recopilados, con el objetivo de enviar solicitudes, ofertas o cualquier otro tipo de información comercial indeseada (SPAM) a los mismos.<br>
+                          
+                          C. Utilizar cualquier tipo de programa, falla u omisión del servicio que tenga la aptitud de dañar, deshabilitar o destruir, de forma parcial o completa, los servicios o los medios por los cuales se entrega el servicio.<br>
+                          
+                          D. Interferir de cualquier forma o poner en peligro la seguridad del servicio, los datos almacenados y cualquier otra información de carácter confidencial, sensible o esencial para los Usuarios y/o Bowish.<br>
+                          E. Realizar seguimiento o procesamiento de los datos e información contenida en el sitio o cualquiera de los medios por los cuales se entrega el servicio.<br>
+                          
+                          F. Proporcionar datos erróneos, falsos o incompletos.<br>
+                          
+                          G. Utilizar cuentas, contraseñas, datos o cualquier otra información con fines contrarios a estos Términos y Condiciones, a la ley vigente, al orden público, las buenas costumbres y a los derechos de terceros.</p>
+                  </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingNine">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                        7. OTORGAMIENTO DE LICENCIA LIMITADA
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
+                  <div class="card-body">
+                      <p>Sujeto al cumplimiento de estos Términos y Condiciones, Bowish otorga al Usuario una licencia limitada, no exclusiva, no sublicenciable, revocable, no transferible para: (i) el acceso y uso de la Aplicación su dispositivo personal solo en relación con el uso del Servicio; y (ii) el acceso y uso de cualquier contenido, información y material relacionado que pueda ponerse a disposición a través del Servicio, en cada caso solo para su uso personal, no comercial. Bowish y sus licenciantes se reservan cualquier derecho que no haya sido expresamente otorgado por el presente.</p>
+                  </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTen">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                        8. VÍNCULOS A PÁGINAS DE TERCEROS
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
+                  <div class="card-body">
+                      <p>Los medios por los cuales se entregue el Servicio al Usuario podrán contener hipervínculos o enlaces a otros sitios web. En la medida en que ello no se indique expresamente, estos sitios no tienen ningún tipo de relación con Bowish, quien no controla, edita, ni participa en sus contenidos o funcionamiento. Bowish no garantiza el acceso, funcionamiento o cualquier otra característica de estos sitios de terceros, como tampoco es responsable por cualquier daño o perjuicio que pudieren ocasionar. En ningún caso existe algún tipo de relación contractual, social o de otra naturaleza entre Bowish y las personas naturales o jurídicas que tengan relación con los sitios a los cuales dirijan los enlaces.</p>
+                  </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingEleven">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                        9. VÍNCULOS RELACIONADOS CON EL SERVICIO
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordionExample">
+                  <div class="card-body">
+                      <p>Bowish únicamente contiene hipervínculos o enlaces con el fin de entregar su servicio de forma completa y exacta, siendo su función principal la recopilación de antecedentes. La certeza y veracidad de dichos antecedentes corresponde exclusivamente a quien los emite, por lo que Bowish no se responsabiliza por estos datos. Es deber del “Usuario” corroborar la exactitud de los descuentos, promociones u ofertas con el emisor de las mismas, siendo Bowish ajeno a cualquier tipo de relación contractual o extracontractual entre el “Usuario” y los terceros con los que decide relacionarse o contratar.</p>
+                      <p>Los sitios a los que enlace el servicio son de plena responsabilidad de sus titulares, los que podrán libremente implementar cualquier medida o condición
+                      para el acceso de su sitio, por lo que no tiene injerencia alguna en las acciones u omisiones que surjan de la relación entre éstos y el Usuario. La relación entre Usuario y los sitios de tercero se regirá en todo momento por lo que las partes acuerden y toda información que el Usuario decida o dar acceso es de su exclusiva responsabilidad. La disponibilidad del contenido o su credibilidad depende exclusivamente del titular del sitio, Bowish únicamente se limita a reproducir información entregada por el comercio.</p>
+                  </div>
+                </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwelve">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                    10. PRIVACIDAD Y PROTECCIÓN DE DATOS PERSONALES
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordionExample">
+                <div class="card-body">
+                    <p>En cumplimiento a las disposiciones legales vigentes, los Datos Personales del Usuario le que sea almacenada en los servidores o en otros medios electrónicos por parte de Bowish será custodiada por medio de sistemas de seguridad electrónicos y físicos, con altos estándares de seguridad. El acceso y uso de los Datos Personales se encuentra restringido a toda persona, y sólo será utilizado para el óptimo funcionamiento de la Aplicación y para aquellos usos autorizados al momento de efectuar el registro del Usuario.</p>
+
+                    <p> entrega de la dirección de correo electrónico u otros Datos Personales que se indican en formulario de registro de usuario, son requisito necesario para acceder a la utilización de la Aplicación y al Servicio.</p>
+                      
+                      <p>Para la activación de este registro y de su Cuenta, los Usuarios deberán proporcionar los datos que se les solicitan en formulario de registro, alguno de los cuales tienen el carácter de Datos Personales.</p>
+                      
+                      <p> este acto, los Usuarios autorizan que dicha información, incluyendo sus Datos Personales, así como aquellos datos asociados a la frecuencia y forma de utilización de la Aplicación sea tratada o procesada por Bowish o terceros a quien ésta encomiende dicho procesamiento.</p>
+                      
+                      <p>En particular, el Usuario concede su autorización para que las direcciones de correo proporcionadas sean utilizadas para enviar comunicaciones comerciales de promoción o publicidad de los descuentos y beneficios en bienes, productos y servicios comunicados a través de la Aplicación.</p>
+                      
+                      <p>Al completar el formulario de registro, los Usuarios prestan su consentimiento expreso para que los Datos Personales entregados a través de éste puedan ser comunicados para su utilización por Bowish y autorizan su utilización por terceros no/si relacionados a Bowish, con el fin de ofrecer a los Usuarios productos, regalos, servicios o beneficios.</p>
+                      
+                      <p>El Usuario autoriza por este acto expresamente que sus Datos Personales entregados a través del formulario de registro de Usuario sean procesados por Bowish con los fines antes indicados o por terceros a los cuales Bowish encomiende dicho procesamiento o les comunique tales datos conforme a la autorización concedida en el acto de registro por los Usuarios.</p>
+                      
+                      <p>Bowish pone a disposición de los Usuarios la dirección de correo electrónicohola@bowish.com, para que estos revoquen el consentimiento prestado, eliminando su suscripción a la Aplicación. Así como el ejercicio de los derechos de acceso, rectificación, cancelación y oposición respecto de sus Datos Personales garantizados por la legislación de protección de la privacidad vigente en Chile.</p>
+                      
+                      <p>Bowish, declara que cumple la normativa respecto a la protección de datos personales y protección de la privacidad vigente en Chile.</p>
+                      
+                      <p><b>Contenido generado por el usuario:</b> también recopilamos y almacenamos la información que nos proporciona al utilizar nuestro servicio. Estos datos incluyen, por ejemplo, cupones activados, feedback y todas las acciones que se realicen dentro de la aplicación además de cualquier otra información que adjunte o comparta al usar Bowish.</p>
+                      
+                      <p>Podemos ofrecer tableros de anuncios, blogs, salas de chat, tableros de mensajes o foros públicos similares donde puede comunicarse con nosotros u otros usuarios. Cualquier información que envíe o publique en estos blogs, redes sociales u otros foros podría ser vista por otros usuarios o podría estar públicamente disponible. No recomendamos publicar información personal en foros públicos. Si elige publicar información personal, otros espectadores pueden usar esta información para enviarle mensajes no solicitados. No somos responsables de la información personal que elija enviar en estos blogs y otros foros, por lo que tenga cuidado con lo que divulgue y no publique ninguna información que espere mantener en privado.</p>
+                      
+                      <p><b>Otra información:</b> podemos solicitar u obtener otra información, como comentarios, preguntas, comentarios, sugerencias o ideas para proporcionarle otros beneficios o mejorar el Servicio.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThirteen">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                    11. CANCELACIÓN DE LA CUENTA Y REGISTRO
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen" data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>A. El Usuario podrá solicitar la cancelación de su registro y cuenta en la Aplicación en cualquier momento. Para estos efectos, el Usuario deberá notificar por escrito a Bowish con una anticipación de al menos 10 días hábiles al correo hola@bowish.com.</p>
+
+                  <p>B. Bowish podrá cancelar el registro y cuenta del Usuario en la Aplicación en cualquier momento mediante el envío de una notificación. l caso que sobrevenga su muerte o si tomamos conocimiento de que carece de capacidad legal o si incurre en algún incumplimiento a estos Términos y Condiciones. Lo anterior es sin perjuicio, de las medidas y acciones judiciales y extrajudiciales que Bowish pueda adoptar.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFourteen">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                    12. PROPIEDAD INTELECTUAL E INDUSTRIAL
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen" data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>La Aplicación es de propiedad de Bowish. Los derechos de propiedad intelectual, incluida la reproducción, comunicación pública, distribución y transformación de la Aplicación, de sus componentes, pantallas, gráficas, y la información que ella contiene, son propiedad exclusiva de Bowish, salvo que expresamente se especifique otra cosa. Cualquier denominación, diseño y/o logotipo, así como cualquier producto o servicio ofrecidos y reflejados en la presentación externa de esta aplicación, son marcas debidamente registradas por Bowish. Cualquier uso indebido de las mismas por personas diferentes de su legítimo titular, y sin el consentimiento expreso e inequívoco por parte de éste, podrá ser denunciado y perseguido a través de todos los medio legales existentes en el ordenamiento jurídico chileno.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFifteen">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+                    13. JURISDICCIÓN Y LEY APLICABLE
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseFifteen" class="collapse" aria-labelledby="headingFifteen" data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>Estos Términos y Condiciones se regirán, interpretará y ejecutarán en todas sus partes y sin importar las personas que figuren en el mismo, por las leyes de la República de Chile. Las partes acuerdan que cualquier controversia suscitada en relación al presente acuerdo, su existencia, validez, interpretación, alcance o cumplimiento, deberá ser sometida a los Tribunales competentes conforme a los procedimientos y a la ley aplicable de la República de Chile y llevados en idioma castellano.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingSixteen">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+                    14. REGLAMENTO DE COMENTARIOS
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseSixteen" class="collapse" aria-labelledby="headingSixteen" data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>Todos los comentarios son en favor de la colaboración y construcción para mejorar la experiencia de compra/consumo en los comercios asociados.</p>
+
+                    <p><b>A. Comentarios aceptados y premiados con estrellas</b><br>
+                    Comentarios que: <br>
+                    - Felicitar al comercio<br>
+                    - Generar ideas que ayuden a la mejor experiencia<br>
+                    - Comentar experiencia<br>
+                    - Crítica constructiva, entre otros comentarios con el fin colaborativo y constructivo.</p>
+                    
+                    <p><b>B. Bowish tiene la facultad de eliminar comentarios y quitar estrellas obtenidos por él.</b><br>
+                    Comentarios que:<br>
+                    - Induzcan a la violencia<br>
+                    - La crítica con odio<br>
+                    - Amenazas<br>
+                    - Palabras u oraciones vulgares<br>
+                    - Comentarios de odio y mala fe</p>
+                    
+                    <p>Bowish tiene facultad sobre los comentarios y otorga su aprobación o desaprobación de los comentarios, según el criterio de Bowish.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingSeventeen">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
+                    15. DISPOSICIONES GENERALES
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseSeventeen" class="collapse" aria-labelledby="headingSixteen" data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>A. El Usuario no podrá ceder ni transferir estos Términos y Condiciones, en todo o en parte, sin el consentimiento previo por escrito de Bowish Asimismo, el Usuario por este acto, otorga su aprobación a Bowish para ceder o transferir estos Términos y Condiciones, en todo o en parte, incluido a: (i) una subsidiaria o un afiliado; (ii) un adquirente del capital, del negocio o de los activos de Bowish; o (iii) cualquier sucesor legal.</p>
+
+                  <p>B. Si cualquier disposición de estos Términos y Condiciones se considerara ilegal, nula o inexigible, ya sea en su totalidad o en parte, de conformidad con la legislación chilena, dicha disposición o parte de esta se considerará que no forma parte de estos Términos y Condiciones, no siendo afectada la legalidad, validez y exigibilidad del resto de las disposiciones de estos Términos y Condiciones. En ese caso, las partes deberán reemplazar dicha disposición ilegal, nula o inexigible, en todo o en parte por una disposición legal, válida y exigible que tenga, en la medida de lo posible, un efecto similar al que tenía la disposición ilegal, nula o inexigible, dados los contenidos y el propósito de estos Términos y Condiciones.</p>
+                  
+                  <p>C. Estos Términos y Condiciones constituyen el contrato íntegro y el entendimiento entre las partes en relación con el objeto y sustituye y reemplaza a
+                  todos los contratos o acuerdos anteriores o contemporáneos en relación con dicho objeto.</p>
+                  
+                  <p>D. Cualquier parte de estos Términos y Condiciones que no pueda ser aplicada por circunstancias específicas o generales que influyan sobre él, no inválida este acuerdo ni sus disposiciones, salvo específicamente respecto a aquellas que no puedan ser aplicadas.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div ng-show="preguntas">
+        <ul class="lista-preguntas">
+          <li>¿Qué es Bowish?</li>
+          <p>Es un extraterrestre que viene de un planeta lejano para ayudarte a ahorrar a través de descuentos y beneficios en los comercios asociados.
+          La navegación y hacer efectivo los descuentos y beneficios es absolutamente gratis para ti.</p>
+          <li>¿Cómo busco mis descuentos/beneficios?</li>
+          <p>Al momento de ingresar a Bowish tendrás en la pantalla los descuentos/beneficios asociados, y puedes filtrar tu búsqueda a partir de: Filtros, categorías, 
+          o con el nombre del comercio en la lupa de búsqueda.</p>
+          <li>¿Cómo hago efectivo mis beneficios/descuentos Bowish?</li>
+          <p>Busca el descuento/beneficio que tú quieres, lo pinchas, revisas y aceptas las condiciones comerciales que aparecen en la pantalla, y en esa misma 
+          pantalla pinchas “Activar Cupón”. Al momento de comprar o pagar la cuenta en los comercios adheridos, muestra o entrega verbalmente el código del
+          cupón, y listo. ¡Así de fácil¡</p>
+          <li>¿Cuándo y cómo calificar/comentar la calidad de servicio de un comercio?</li>
+          <p>Al momento de canjear tu código en el comercio, aparecerá una notificación en la APP, y al ingresar a ella aparece una pantalla en la que podrás calificar 
+           al comercio. Si crees que no es el momento para hacerlo, pincha la cruz en la esquina superior derecha o pincha donde dice “responder después”. 
+           Tienes hasta 7 días para hacerlo después de consumir el beneficio/descuento.</p>
+           <li>¿Es obligación puntuar la calidad de servicio y dejar un comentario?</li>
+           <p>No, no es obligación, sin embargo recomendamos hacerlo para así desbloquear nuevos beneficios.</p>
+           <li>¿Dónde puedo calificar los comercios que no he calificado?</li>
+           <p>Pincha en la esquina superior derecha de la APP, donde están tus notificaciones, ahí podrás encontrars las los comercios no calificados.</p>
+           <li>¿Por qué calificar a los comercios?</li>
+           <p>Para Bowish y para los comercios es importante conocer tu opinión sobre la experiencia que has tenido, y así mejorar el servicio.</p>
+           <li>¿Qué gano por calificar a los comercios?</li>
+           <p>Vas acumulando “estrellas Bowish”. También tendremos concursos y premios exclusivos para los mejores “Colaboradores de Bowish” dentro de la
+            comunidad.</p>
+            <li>¿Cómo se adquieren las estrellas Bowish?</li>
+            <p>Se adquieren por utilizar un código, dejar comentarios, o compartir la APP con un amigo</p>
+            <li>¿Tengo que tener internet para hacer efectivo el descuento/beneficio?</li>
+            <p>No necesariamente. Si no tienes internet móvil, tienes que buscar tu descuento/beneficio y generar el cupón cuando tengas internet. Pero puedes 
+            mostrarlo en el comercio sin internet. Tienes que dejar anotado el código en algún lugar para después utilizarlo.</p>
+            <li>¿Cuánto dura activado el descuento/beneficio?</li>
+            <p>12 horas desde el momento de la activación del cupón.</p>
+        </ul>
+      </div>
+    </div>
+    <section id="section-5" name="section-5" data-hash="section-5" class="container-fluid section">
+      <div class="row align-items-center">
+        <div class="col-lg-7 col-sm-12" data-aos="fade-right">
+            <div class="col-sm-11 p-0">
+                <h2 class="section-title">ESTAMOS EN CONTACTO</h2>
+                <p class="section-description">Mándanos tus comentarios y lo enviaremos a nuestra base intergaláctica Bowish.<br> ¡Será revisado lo más rápido posible!</p>
+            </div>
+            <div class="row p-0">
+              <div class="col-sm-12">
+                <form action="sendform.php" method="POST">
+                  <div class="row">
+                      <div class="col-sm-5">
+                          <label for="nombre">Nombre</label>
+                          <input type="text" name="nombre" required>
+                        </div>
+                        <div class="col-sm-5">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" required>
+                        </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-sm-5">
+                          <label for="telefono">Teléfono(Opcional)</label>
+                          <input type="text" name="telefono">
+                      </div>
+                      <div class="col-sm-5">
+                          <label for="asunto">Asunto</label>
+                          <input type="text" name="asunto" required>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-sm-10">
+                          <label for="comentario">Comentario</label>
+                          </textarea><textarea name="comentario" id="" cols="30" rows="3" required></textarea>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-5">
+                      <input type="submit" class="submit-button" value="ENVIAR">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-sm-12">
+            <div class="section-img-container" data-aos="fade-left">
+                <img src="../img/bowish_contact.png" alt="bowish_mobile_app" class="contact-form-img">
+              </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 vertical-line">
+            <div class="footer-img-container">
+              <img src="../img/bowish_footer_logo.png" alt="bowish_footer_logo">
+            </div>
+            <div>
+              <p>Puedes seguirme en mis redes sociales, Facebook e Instagram es lo que está de moda aquí en la Tierra, ¿verdad? </p>
+            </div>
+            <div class="copyright">
+              <p>(R) BOWISH TEAM S.A</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 vertical-line">
+              <h3 class="footer-title" style="padding-left: 40px;">MENÚ</h3>
+              <ul class="footer-list">
+                <li><a href="#">&nbsp;¿Qué es Bowish?</a></li>
+                <li><a href="#">&nbsp;¿Cómo funciona?</a></li>
+                <li><a href="#">&nbsp;Simple y Rápida</a></li>
+                <li><a href="#">&nbsp;Descargas</a></li>
+                <li><a href="#section-5">&nbsp;Contacto</a></li>
+                <!-- <li><a href="#">&nbsp;Políticas Sustentables</a></li> -->
+                <li><a href="#">&nbsp;Términos y Condiciones</a></li>
+                <li><a href="#">&nbsp;FAQ</a></li>
+              </ul>
+          </div>
+          <!-- <div class="col-lg-3 col-md-6 vertical-line">
+              <h3 class="footer-title" style="padding-left: 40px;">NOSOTROS</h3>
+              <ul class="footer-list">
+                <li><a href="#">&nbsp;lorem ipsum</a></li>
+                <li><a href="#">&nbsp;lorem ipsum</a></li>
+                <li><a href="#">&nbsp;lorem ipsum</a></li>
+                <li><a href="#">&nbsp;lorem ipsum</a></li>
+                <li><a href="#">&nbsp;lorem ipsum</a></li>
+              </ul>
+          </div> -->
+          <div class="col-lg-4 col-md-4">
+              <h3 class="footer-title" style="padding-left: 40px;">REDES SOCIALES</h3>
+              <ul class="footer-list rrss-list">
+                <li><a href="https://web.facebook.com/bowishCL/" target="_blank"><i class="fa fa-facebook" aria-hidden="true" style="margin-left: 5px"></i> /BowishCL</a></li>
+                <li><a href="https://www.instagram.com/bowishcl/" target="_blank"><img src="../img/instagram.png" alt="" class="img-instagram" width="21"/> @BowishCL</a></li>
+                <li><a href="#" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i> /BowishCL</a></li>
+                <li><a href="https://twitter.com/bowish2" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>@BowishCL</a></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../node_modules/popper.js/dist/popper.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

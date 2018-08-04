@@ -54,6 +54,16 @@ jQuery(document).ready(function($){
         });
     }
 
+    //funcion para traspasar clase active en menu de terminos y condiciones
+    $('.navbar-nav .nav-item a').click(function(e) {
+
+        $('.navbar-nav .nav-item.active').removeClass('active');
+
+        var $parent = $(this).parent();
+        $parent.addClass('active');
+        e.preventDefault();
+    });
+
 });
 
     //Desplegable Menu 
