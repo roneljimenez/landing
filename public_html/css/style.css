@@ -280,6 +280,29 @@
     width: 27px;
     margin-right: 7px;
   }
+  .bowish-btn {
+    display: inline-block;
+    border: 2px solid #49beb4;
+    border-radius: 12px;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    color: #49beb4;
+    font-family: 'RadikalBold';
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    line-height: 1;
+  }
+  .bowish-btn:hover, .bowish-btn:focus, .bowish-btn:active {
+    color: #49beb4;
+    text-decoration: none;
+    opacity: .8;
+  } 
+  .special-container {
+    position: relative;
+    right: 0;
+    margin-right: -30px;
+  }
 @media only screen and (min-width: 1024px) and (max-width: 1240px) {
     section {
       min-height: 50vh;
