@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../icons/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/style.css?v=1.5.1">
-    <link rel="stylesheet" href="../css/stylefaqs.css?v=1.0">
+    <link rel="stylesheet" href="../css/stylefaqs.css?v=1.2">
     <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css">
     <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
     <script src="../js/modernizr.js"></script>
@@ -49,14 +49,14 @@
           </div>
         </nav>
     </div>
-    <div class="container-fluid"> 
+    <div class="container-fluid content"> 
       <div ng-show="terminos">
           <div class="accordion" id="accordionExample">
             <div class="card">
               <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
-                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Bowish
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" ng-click="changeCollapsed()">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i> Bowish
                   </button>
                 </h5>
               </div>
@@ -72,7 +72,7 @@
               <div class="card-header" id="headingTwo">
                 <h5 class="mb-0">
                   <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Comercio(s)
+                    <i class="fa fa-angle-down" aria-hidden="true"></i> Comercio(s)
                   </button>
                 </h5>
               </div>
@@ -92,7 +92,7 @@
               <div class="card-header" id="headingThree">
                 <h5 class="mb-0">
                   <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      1. SERVICIO
+                    <i class="fa fa-angle-down" aria-hidden="true"></i> 1. SERVICIO
                   </button>
                 </h5>
               </div>
@@ -112,7 +112,7 @@
                 <div class="card-header" id="headingFour">
                   <h5 class="mb-0">
                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        2. INSCRIPCIÓN Y CREACIÓN DE CUENTA
+                      <i class="fa fa-angle-down" aria-hidden="true"></i> 2. INSCRIPCIÓN Y CREACIÓN DE CUENTA
                     </button>
                   </h5>
                 </div>
@@ -135,7 +135,7 @@
                 <div class="card-header" id="headingFive">
                   <h5 class="mb-0">
                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        3. OBLIGACIONES DEL USUARIO
+                      <i class="fa fa-angle-down" aria-hidden="true"></i> 3. OBLIGACIONES DEL USUARIO
                     </button>
                   </h5>
                 </div>
@@ -157,7 +157,7 @@
                 <div class="card-header" id="headingSix">
                   <h5 class="mb-0">
                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                        4. RESPONSABILIDAD DE TÉRMINOS Y CONDICIONES
+                      <i class="fa fa-angle-down" aria-hidden="true"></i> 4. RESPONSABILIDAD DE TÉRMINOS Y CONDICIONES
                     </button>
                   </h5>
                 </div>
@@ -183,7 +183,7 @@
                 <div class="card-header" id="headingSeven">
                   <h5 class="mb-0">
                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                        5. ACCESO, USO DE RED Y FALLAS EN EL SISTEMA
+                      <i class="fa fa-angle-down" aria-hidden="true"></i> 5. ACCESO, USO DE RED Y FALLAS EN EL SISTEMA
                     </button>
                   </h5>
                 </div>
@@ -216,7 +216,7 @@
                 <div class="card-header" id="headingEight">
                   <h5 class="mb-0">
                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                        6. PROHIBICIONES
+                      <i class="fa fa-angle-down" aria-hidden="true"></i> 6. PROHIBICIONES
                     </button>
                   </h5>
                 </div>
@@ -243,7 +243,7 @@
                 <div class="card-header" id="headingNine">
                   <h5 class="mb-0">
                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                        7. OTORGAMIENTO DE LICENCIA LIMITADA
+                      <i class="fa fa-angle-down" aria-hidden="true"></i> 7. OTORGAMIENTO DE LICENCIA LIMITADA
                     </button>
                   </h5>
                 </div>
@@ -257,7 +257,7 @@
                 <div class="card-header" id="headingTen">
                   <h5 class="mb-0">
                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                        8. VÍNCULOS A PÁGINAS DE TERCEROS
+                      <i class="fa fa-angle-down" aria-hidden="true"></i> 8. VÍNCULOS A PÁGINAS DE TERCEROS
                     </button>
                   </h5>
                 </div>
@@ -271,7 +271,7 @@
                 <div class="card-header" id="headingEleven">
                   <h5 class="mb-0">
                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-                        9. VÍNCULOS RELACIONADOS CON EL SERVICIO
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>  9. VÍNCULOS RELACIONADOS CON EL SERVICIO
                     </button>
                   </h5>
                 </div>
@@ -287,7 +287,7 @@
               <div class="card-header" id="headingTwelve">
                 <h5 class="mb-0">
                   <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
-                    10. PRIVACIDAD Y PROTECCIÓN DE DATOS PERSONALES
+                    <i class="fa fa-angle-down" aria-hidden="true"></i> 10. PRIVACIDAD Y PROTECCIÓN DE DATOS PERSONALES
                   </button>
                 </h5>
               </div>
@@ -323,7 +323,7 @@
               <div class="card-header" id="headingThirteen">
                 <h5 class="mb-0">
                   <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
-                    11. CANCELACIÓN DE LA CUENTA Y REGISTRO
+                    <i class="fa fa-angle-down" aria-hidden="true"></i> 11. CANCELACIÓN DE LA CUENTA Y REGISTRO
                   </button>
                 </h5>
               </div>
@@ -339,7 +339,7 @@
               <div class="card-header" id="headingFourteen">
                 <h5 class="mb-0">
                   <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
-                    12. PROPIEDAD INTELECTUAL E INDUSTRIAL
+                    <i class="fa fa-angle-down" aria-hidden="true"></i> 12. PROPIEDAD INTELECTUAL E INDUSTRIAL
                   </button>
                 </h5>
               </div>
@@ -353,7 +353,7 @@
               <div class="card-header" id="headingFifteen">
                 <h5 class="mb-0">
                   <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
-                    13. JURISDICCIÓN Y LEY APLICABLE
+                    <i class="fa fa-angle-down" aria-hidden="true"></i> 13. JURISDICCIÓN Y LEY APLICABLE
                   </button>
                 </h5>
               </div>
@@ -367,7 +367,7 @@
               <div class="card-header" id="headingSixteen">
                 <h5 class="mb-0">
                   <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
-                    14. REGLAMENTO DE COMENTARIOS
+                    <i class="fa fa-angle-down" aria-hidden="true"></i> 14. REGLAMENTO DE COMENTARIOS
                   </button>
                 </h5>
               </div>
@@ -398,7 +398,7 @@
               <div class="card-header" id="headingSeventeen">
                 <h5 class="mb-0">
                   <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
-                    15. DISPOSICIONES GENERALES
+                    <i class="fa fa-angle-down" aria-hidden="true"></i> 15. DISPOSICIONES GENERALES
                   </button>
                 </h5>
               </div>

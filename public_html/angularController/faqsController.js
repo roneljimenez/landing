@@ -4,6 +4,7 @@ var app = angular.module('faqsApp', ['duScroll']);
 app.controller('showTerminosController', function($scope){
     $scope.terminos = true;
     $scope.preguntas = false;
+    $scope.collapsed = true;
 
     $scope.showTerminos = function() {
         console.log("activo");
@@ -14,6 +15,9 @@ app.controller('showTerminosController', function($scope){
     $scope.showPreguntas = function() {
         $scope.terminos = false;
         $scope.preguntas = true;
+    }
+    $scope.changeCollapsed = function() {
+        $scope.collapsed = !$scope.collapsed;
     }
 
 });
