@@ -10,6 +10,10 @@
     font-family: 'RadikalBold';
     src: url('../fonts/Nootype\ -\ Radikal\ Bold.otf') format("opentype");
   }
+  @font-face {
+    font-family: 'RadikalRegular';
+    src: url('../fonts/Nootype\ -\ Radikal.otf') format("opentype");
+  }
   
   body {
     margin: 0;
@@ -300,9 +304,32 @@
   } 
   .special-container {
     position: relative;
+    top: 15px;
     right: 0;
     margin-right: -30px;
   }
+  .index-steps li {
+    list-style: none;
+    margin: 10px 0;
+    font-family: 'RadikalRegular';
+    font-size: 17px;
+    letter-spacing: 2px;
+  }
+  .index-steps .img-steps {
+    display: inline-block;
+    width: 35px;
+  }
+  .index-steps .text-steps {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  .index-footer .footer-list>li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  .index-footer .img-instagram {
+    margin-bottom: 13px;
+}
 @media only screen and (min-width: 1024px) and (max-width: 1240px) {
     section {
       min-height: 50vh;
@@ -372,6 +399,9 @@
     width: 208px;
     height: 60px;
   }
+  .special-container {
+    right: -77px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -415,6 +445,9 @@
   .vertical-line {
     border: transparent;
   }
+  .bowish-btn {
+    margin-bottom: 10px;
+  }
 
 }
 @media only screen and (max-width: 360px) {
@@ -423,6 +456,12 @@
   }
   .content-description {
     max-height: 170px;
+  }
+  .index-steps .text-steps {
+    width: 200px;
+  }
+  .index-steps .img-steps {
+    vertical-align: top;
   }
 }
 @media only screen and (max-width: 320px) {
@@ -450,5 +489,14 @@
   }
   #right-nav ul>li>a {
     font-size: 18px;
+  }
+  .index-steps .img-steps {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .index-steps .text-steps {
+    text-align: center;
   }
 }
