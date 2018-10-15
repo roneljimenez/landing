@@ -94,3 +94,13 @@ jQuery(document).ready(function($){
             });
         }
     });
+
+    //mostrar boton volver cuando se hace scroll 
+    $(window).scroll(function(){
+        var height = $(window).scrollTop();
+        if(height > 20){
+            $(".back-button").show();
+        } else {
+            $(".back-button").hide();
+        }
+    });

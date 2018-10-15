@@ -342,7 +342,25 @@
   }
   .index-footer .img-instagram {
     margin-bottom: 13px;
-}
+  }
+  .back-button {
+    z-index: 10;
+    display: inline;
+    position: fixed;
+    bottom: 10px;
+    left: 30px;
+    display: none;
+  }
+  .back-button a {
+    opacity: .5;
+  }
+  .back-button a:hover {
+    opacity: 1;
+  }
+  .back-button .fa-arrow-circle-o-left {
+    font-size: 55px;
+    color: #fff;
+  }
 @media only screen and (min-width: 1024px) and (max-width: 1240px) {
     section {
       min-height: 50vh;

@@ -9,16 +9,23 @@
     "angular-scroll": "^1.0.2",
     "animate.css": "^3.6.1",
     "aos": "^3.0.0-beta.4",
+    "body-parser": "^1.18.3",
     "bootstrap": "^4.1.1",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
     "jquery": "^3.3.1",
     "lethargy": "^1.0.4",
     "modernizr": "^3.6.0",
+    "nodemailer": "^4.6.8",
     "popper.js": "^1.14.3",
     "smartscroll": "^2.5.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -28,7 +35,7 @@
     "bowish"
   ],
   "author": "ronel jimenez",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://gitlab.com/bowish/landing/issues"
   },

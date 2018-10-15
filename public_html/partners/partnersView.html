@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="../icons/font-awesome-4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../css/style.css?v=1.5.3">
+  <link rel="stylesheet" href="../css/style.css?v=1.5.4">
   <link rel="stylesheet" href="../css/dotsmenu.css?v=1">
   <link rel="stylesheet" href="../css/navmenu.css?v=1">
   <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css">
@@ -17,6 +17,7 @@
 </head>
 <body>
   <div class="wrap" ng-controller="MyCtrl">
+      <div class="back-button"><a href="../index.html"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i></a></div>
     <!-- <div class="mainHeader">
       <a href="#section-3" du-smooth-scroll du-scrollspy><button class="bowishBtn">QUIERO SER PARTE</button></a>
     </div> -->
@@ -129,7 +130,7 @@
                 </div>
                 <div class="row p-0">
                   <div class="col-sm-12">
-                    <form action="../sendform.php" method="POST">
+                    <form action="http://127.0.0.1:3000/sendform" method="post">
                       <div class="row">
                           <div class="col-sm-5">
                               <label for="nombre">Nombre</label>
@@ -153,7 +154,7 @@
                       <div class="row">
                           <div class="col-sm-10">
                               <label for="comentario">Comentario</label>
-                              </textarea><textarea name="comentario" id="" cols="30" rows="3" required></textarea>
+                              <textarea name="comentario" id="" cols="30" rows="3" required></textarea>
                           </div>
                       </div>
                       <div class="row">
